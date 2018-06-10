@@ -13,8 +13,8 @@ def print_line(line, encoding, errors) :
     raw_bytes = next_lang.encode (encoding, errors=errors)
     cooked_string = raw_bytes.decode (encoding, errors=errors)
 
-            print(raw_bytes, "<===>", cooked_string)
+            print (raw_bytes, "<===>", cooked_string)
 
-        language = open ("languages.txt", encoding="utf-8")
+        languages = open ("languages.txt", encoding="utf-8")
 
         main (languages, encoding, error)
